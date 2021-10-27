@@ -1,0 +1,60 @@
+.footer-subscription {
+  margin-left: 100px;
+}
+
+.strong {
+  display: block;
+  @include font(14px, 700, 16px, 0.03em);
+  color: var(--primary-title-color);
+  margin-bottom: 20px;
+}
+
+.subscription {
+  display: flex;
+}
+
+.subscription-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--primary-white-color);
+  outline: none;
+    &:focus,
+    &:hover {
+      border: 1px solid var(--accent-color);
+      color: var(--primary-title-color);
+}
+}
+
+
+.subscription-btn {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 10px 27px;
+  text-align: center;
+  @include font(16px, 500, 30px, 0.06em);
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--primary-title-color);
+  background-color: #2196f3;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border: var(--accent-color);
+}
+}
+.subscription-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+

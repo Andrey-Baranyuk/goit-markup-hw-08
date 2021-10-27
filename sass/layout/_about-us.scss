@@ -1,0 +1,40 @@
+.about-us {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.about-us-list {
+  display: flex;
+  flex-basis: calc(100% / 3 - 90px);
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -50px;
+}
+.about-us-list__item {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.about-us__title {
+  text-align: center;
+  @include font(36px, 700, 42px, 0.03em);
+  color: var(--secondary-title-color);
+  margin-bottom: 50px;
+}
+
+.about-us__list-name {
+  position: relative;
+}
+
+.about-us-list__item-name {
+  position: absolute;
+ @extend %aline-items;
+  text-align: center;
+  text-transform: uppercase;
+  @include font(14px, 700, 16px, 0.03em);
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-title-color);
+  bottom: 0;
+}
