@@ -1,8 +1,11 @@
 .about-us {
-  padding-top: 47px;
-  padding-bottom: 94px;
-}
 
+    @media screen and (min-width: 1200px) {
+   padding-top: 47px;
+   padding-bottom: 94px;
+  }
+}
+ 
 .about-us-list {
   display: flex;
   flex-basis: calc(100% / 3 - 90px);

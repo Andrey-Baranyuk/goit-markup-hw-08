@@ -1,6 +1,11 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 .clients-title {
   @include font(36px, 700, 42px, 0.03em);
@@ -10,15 +15,33 @@
 }
 
 .clients-list {
-  display: flex;
-  margin-left: -30px;
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    margin-top: -50px;
+  }
 }
 
 .clients-item {
-  flex-basis: calc(100% / 6 - 30px);
+  width: 210px;
   margin-left: 30px;
-  display: flex;
+  margin-top: 30px;
   height: 92px;
+  @media screen and (min-width: 480px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 767px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-left: 30px;
+    display: flex;
+  
+  }
 }
 
 .clients-icon {
