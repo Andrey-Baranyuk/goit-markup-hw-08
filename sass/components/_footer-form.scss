@@ -1,5 +1,9 @@
 .footer-subscription {
+  width: 100%;
+  @media screen and (min-width: 1200px) {
   margin-left: 100px;
+text-align: left;
+  }
 }
 
 .strong {
@@ -11,13 +15,27 @@
 
 .subscription {
   display: flex;
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-direction: row;
+  }
 }
 
 .subscription-input {
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
-  padding: 15px 16px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+  width: 358px;
   margin-right: 12px;
+  }
+  padding: 15px 16px;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -36,8 +54,10 @@
 .subscription-btn {
   width: 200px;
   height: 50px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
+
   margin: 0;
   padding: 10px 27px;
   text-align: center;

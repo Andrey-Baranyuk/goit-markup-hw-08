@@ -19,3 +19,20 @@
   }
 }
 
+.gallery-button-list {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @media screen and (min-width: 767px) {
+    display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  }
+@media screen and (min-width: 1200px) {
+    display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  }
+  
+}

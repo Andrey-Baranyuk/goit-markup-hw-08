@@ -4,9 +4,20 @@
   @include font(26px, 700, 30px, 0.03em);
   color: #2196f3;
   text-decoration: none;
-  margin-right: 93px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  
+   @media screen and (min-width: 480px) {
+    padding: 16px 0;
+  }
+   @media screen and (min-width: 767px) {
+    margin-right: 88px;
+    @include font(24px, 700, 28px, 0.03em);
+    padding: 26px 0;
+  }
+    @media screen and (min-width: 1200px) {
+      margin: 25px 93px 25px 0;
+    padding: 0;
+  }
+
 }
 
 .header-logo-studio {
@@ -20,11 +31,17 @@
   display: flex;
 }
 
+
 .header-list {
   display: flex;
   align-items: center;
+
     & .header-list__link.current {
     color: var(--accent-color);
+  }
+
+    @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -40,8 +57,24 @@
 }
 
 .header-list-contacts {
-  margin-left: auto;
+  
   @extend %aline-items;
+
+    @media screen and (min-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: auto;
+  }
+   @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-list__link {
@@ -54,6 +87,9 @@
     &:hover,
     &:focus {
     color: var(--accent-color);
+  }
+     @media screen and (min-width: 767px) {
+  @include font (12px, 500, 14px, 0.02em);
   }
 }
 
@@ -90,8 +126,15 @@
 }
 
 .header-list-contacts__item {
-  display: flex;
-  flex-direction: row;
+
   align-items: baseline;
+   @media screen and (min-width: 767px) {
+  margin-bottom: 10px;
+  }
+  align-items: baseline;
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
