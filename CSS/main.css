@@ -523,15 +523,6 @@ body {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 767px) {
-  .header-list__link {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.16667;
-    letter-spacing: 0.02em;
-  }
-}
-
 .header {
   border-bottom: 1px solid #ececec;
 }
