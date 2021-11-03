@@ -141,6 +141,8 @@ body {
 
 .footer-subscription {
   width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -162,9 +164,11 @@ body {
 
 .subscription {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479px) {
   .subscription {
     justify-content: center;
     flex-direction: column;
@@ -172,7 +176,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .subscription {
     align-items: baseline;
     flex-direction: row;
@@ -1150,11 +1154,9 @@ body {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px) {
-  .footer-adress {
-    margin-bottom: 60px;
-    text-align: center;
-  }
+.footer-adress {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1254,11 +1256,12 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .footer-social {
-    margin-bottom: 60px;
-    text-align: center;
-  }
+.footer-social {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {
