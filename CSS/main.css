@@ -424,12 +424,7 @@ body {
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
-}
-
-@media screen and (min-width: 480px) {
-  .header-logo {
-    padding: 16px 0;
-  }
+  padding: 16px 0;
 }
 
 @media screen and (min-width: 767px) {
