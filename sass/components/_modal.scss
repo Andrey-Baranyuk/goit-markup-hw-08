@@ -85,7 +85,7 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
-  @include font(14px, 400, 24px, 0.03em);
+  @include font(12px, 400, 44px, 0.02em);
   color: var(--primary-text-color);
   margin-bottom: 30px;
   margin-top: 20px;
@@ -97,6 +97,9 @@
       border: 2px solid var(--secondary-text-color);
       margin-right: 9px;
     }
+    @media screen and (min-width: 1200px) {
+        @include font(14px, 400, 24px, 0.03em);
+  }
 }
 
 .chek-link {
@@ -110,6 +113,7 @@
     background-color: var(--accent-color);
     border: none;
   }
+  
 }
 
 .input-btn {
