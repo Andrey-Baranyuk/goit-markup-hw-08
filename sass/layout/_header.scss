@@ -104,13 +104,17 @@
 }
 
 .header-list-contacts__link {
-  @include font(14px, 500, 16px, 0.02em);
+  @include font(12px, 500, 14px, 0.02em);
   color: var(--primary-text-color);
   margin-right: 30px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
     color: var(--accent-color);
+  }
+
+    @media screen and (min-width: 1200px) {
+    @include font(14px, 500, 16px, 0.02em);
   }
 }
 
@@ -196,6 +200,11 @@
     color: #757575;
     margin-bottom: 64px;
 }
+.menu-bottom-part{
+  position: absolute;
+  bottom: 48px;
+}
+
 .mob-bottom-social {
     display: flex;
     justify-content: flex-start;
